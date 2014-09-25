@@ -1,0 +1,8 @@
+.logo {
+	background-color: #FFF;
+	height: 100px;
+	background-image: url('../img/logovh.png');
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: 50% 50%;
+}

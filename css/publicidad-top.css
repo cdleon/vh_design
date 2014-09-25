@@ -1,0 +1,33 @@
+.publicidad-top {
+	display: block;
+	/*background-color: #E5E2C9;*/
+	background-image: url('../img/publicidad/Target.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+	overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+	margin: 0 auto 10px auto;
+	width: 800px;
+	height: 85px;
+	text-align: center;
+}
+@media (max-width: 930px) {
+	.publicidad-top{
+		margin-top:0;
+		width: 100%;
+	}
+}
+@media (max-width: 720px;) {
+	.publicidad-top{
+		margin-top:0;
+		width: 100%;
+	}
+}
+@media (max-width: 690px) {
+	.publicidad-top{
+		margin-top:0;
+		height: 65px;
+	}
+}
