@@ -6,7 +6,6 @@
 }
 .nav {
 	font-weight: normal;
-	background-color: #FFF;
 	text-decoration: none;
 	color: #61212b;
 	margin: 0;
@@ -39,7 +38,6 @@
 	.nav-btn {
 		display: block;
 		padding: 0 15px 0 0;
-		background-color: #FFF;
 		color: #61212b;
 		font-size: 20px;
 		text-align: right;
