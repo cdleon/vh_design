@@ -37,6 +37,14 @@
 	font-weight: normal;
 	font-size: 18px;
 }
+.title-special {
+	display: block;
+	padding: 3px 5px 3px 15px;
+	margin: 0 7px 5px 5px;
+	color: #E5E2C9;
+	font-weight: normal;
+	font-size: 18px;
+}
 @media (max-width: 1080px){
 	.col-2 {
 		width: 25%;
@@ -441,7 +449,7 @@
 	.opinion > section {
 		width: 48%;
 	}
-	.opinion > .web-ignore {
+	.web-ignore {
 		clear: both;
 	}
 }
@@ -476,7 +484,7 @@
 	padding-bottom: 15px;
 }
 .trends > h4 {
-	border: 2px solid #E5E2C9;
+	/*border: 2px solid #E5E2C9;*/
 	font-weight: normal;
 	font-size: 1.2em;
 	color: black;
@@ -484,8 +492,8 @@
 	margin: 0 0 3px 0;
 	color: #61212b;
 }
-.trends .hastag {
-	height: 20px;
+.hashtag {
+	height: 18px;
 }
 .trends > ul > li {
 	margin: 0 0 0 10px;
@@ -551,18 +559,17 @@
 }
 @media (max-width: 700px){
 	.video {
-		border-top: 1px solid gray;
-		border-bottom: 1px solid gray;
-		margin-bottom: 20px;
-		margin-top: 15px;
+		margin:0;
 	}
 }
 
 /****************************************************************************************
 **  TERCERA FILA
 *****************************************************************************************/
-.jumbo-article-width {
-	width: 720px;
+.jumbo-wrap {
+	margin: 0 7px 5px 5px;
+	padding: 5px 0;
+	background-color: #333;
 }
 .jumbo-article-container {
 	display: block;
@@ -570,20 +577,35 @@
 	margin:0 0 15px 6px;
 }
 .jumbo-article-container > img {
-	display: block;;
+	display: block;
 	float: left;
 	width: 360px;
+	margin: 1px;
 }
 .jumbo-article-container > h4 {
 	margin:0;
+	padding: 0;
 	display: block;
 	float: left;
-	width: 350px;
-	padding: 5px;
+	width: 330px;
+}
+.jumbo-article-container > h4 > a {
+	width: 100%;
+	display: block;
+	margin: 5px;
 	text-align: left;
+	text-decoration: underline;
 	word-wrap:break-word;
 	font-weight: 300;
-	font-size: 24px;
+	color: #E5E2C9;
+	font-size: 1.3em;
+}
+.jumbo-article-container > p {
+	display: block;
+	float: left;
+	padding: 0 5px;
+	color: #FFF;
+	font-weight: 300;
 }
 .jumbo-article-container > h5 {
 	margin:0;
@@ -595,6 +617,7 @@
 	word-wrap:break-word;
 	font-weight: normal;
 	font-size: 14px;
+	color: #E5E2C9;
 }
 @media (max-width: 720px) {
 	.jumbo-article-width {
@@ -609,14 +632,25 @@
 	.jumbo-article-container > img {
 		float: none;
 		margin: 0 auto;
-		width: 100%;
+		width: 90%;
 		padding: 0;
+	}
+	.jumbo-article-container > h4 {
+		text-align: center;
 	}
 	.jumbo-article-container > h4, .jumbo-article-container > h5 {
 		float: none;
 		margin: 0 auto;
 		width: 90%;
-		padding: 0;
+	}
+	.jumbo-article-container > p {
+		float: none;
+		margin: 0 auto;
+		width: 90%;
+	}
+	.jumbo-wrap {
+		margin: 0 0 5px 0;
+		padding: 5px 0;
 	}
 }
 .list-article-container {
@@ -686,23 +720,26 @@
 		font-size: .85em;
 	}
 }
+/****************************************************************************************
+**  CUARTA FILA
+*****************************************************************************************/
 .no-photo-right {
 	display: block;
 	width: 100%;
 	margin: 0 auto;
 }
 .no-photo-right > li {
-	margin: 15px 0;
+	margin: 10px 0;
 	padding-top: 2px;
 }
 .no-photo-right > li > h4 {
-	margin: 0 3px;
+	margin: 0 5px;
 	padding: 0;
 	font-weight: normal;
 	color: #333;
 }
 .no-photo-right > li > h5 {
-	margin: 0 3px;
+	margin: 0 5px;
 	padding: 0;
 	font-weight: normal;
 	font-size: .8em;
@@ -739,7 +776,7 @@
 		font-size: 1em;
 	}
 	.no-photo-right > li {
-		margin: 15px 0;
+		margin: 0;
 	}
 	.query {
 		font-size: 1em;
@@ -792,4 +829,145 @@ span.number {
 	display: inline-block;
 	font-size: .8em;
 	margin: 0 5px;
+}
+.no-photo-left > li > h4 {
+	margin: 0 5px;
+	padding: 0;
+	font-weight: normal;
+}
+.no-photo-left > li > h5 {
+	margin: 0 5px;
+	padding: 0;
+	font-weight: 300;
+}
+
+.hashtags {
+	display: block;
+	text-align: left;
+	margin: 5px auto;
+	padding-bottom: 15px;
+}
+.hashtags > h4 {
+	/*border: 2px solid #E5E2C9;*/
+	font-weight: normal;
+	font-size: 1.2em;
+	color: black;
+	padding: 5px 5px 0 10px;
+	margin: 0 0 3px 0;
+	color: #61212b;
+}
+.hashtags > ul > li {
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+@media (max-width: 853px){
+	.hashtags {
+		display: block;
+		width: 350px;
+		float: left;
+	}
+	.hashtags > h4 {
+		padding-left: 30px;
+	}
+	.hashtags > ul {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+@media (max-width: 700px){
+	.hashtags {
+		display: block;
+		float: none;
+		width: 300px;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 450px){
+	.hashtags {
+		display: block;
+		float: none;
+		width: 100%;
+		margin: 5px auto;
+	}
+}
+/****************************************************************************************
+**  QUINTA FILA
+*****************************************************************************************/
+.arte {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 0;
+	background-color: #333;
+}
+.arte > section.first {
+	margin-left: 19px;
+}
+.arte > section {
+	display: block;
+	margin:0 1px;
+	float: left;
+	width: 24%;
+}
+.arte > section > img {
+	width: 100%;
+}
+.arte > section > h4 {
+	margin: 0;
+	padding: 0 5px;
+	position: relative;
+	top: -5px;
+	color: #E5E2C9;
+	text-align: left;
+	font-weight: normal;
+	font-size: .9em;
+}
+.arte > section > h5 {
+	margin: 0 3px 5px 3px;
+	padding: 0;
+	color: #FFF;
+	font-weight: 300;
+	font-size: .8em;
+}
+@media (max-width: 700px){
+	.arte > section {
+		width: 48%;
+	}
+	.arte > section.first {
+		margin-left: 5px;
+	}
+	.arte > section {
+		margin: 0 5px;
+	}
+	.web-ignore {
+		clear: both;
+	}
+}
+@media (max-width: 500px) {
+	.arte > section.first {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+	.arte > section {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+	.arte > section > img {
+		margin: 0 auto;
+		display: block;
+		width: 90%;
+	}
+	.arte > section > h4 {
+		margin: 3px auto;
+		display: block;
+		top: 0;
+		width: 85%;	}
+	.arte > section > h5 {
+		margin: 3px auto;
+		display: block;
+		width: 80%;
+	}
 }
