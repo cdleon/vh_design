@@ -492,8 +492,8 @@
 	margin: 0 0 3px 0;
 	color: #61212b;
 }
-.hashtag {
-	height: 18px;
+.twitter {
+	height: 20px;
 }
 .trends > ul > li {
 	margin: 0 0 0 10px;
@@ -846,7 +846,9 @@ span.number {
 	padding: 0;
 	font-weight: 300;
 }
-
+.hashtag {
+	height: 18px;
+}
 .hashtags {
 	display: block;
 	text-align: left;

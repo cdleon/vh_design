@@ -27,6 +27,9 @@
 	font-size: 20px;
 	color: #61212b;
 }
+.mobile {
+	display: none;
+}
 @media (max-width: 600px){
 	.nav {
 		text-align: right;
@@ -45,6 +48,12 @@
 	}
 	.nav-btn:before {
 		content: "Menu";
+	}
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display: none;
 	}
 }
 @media (min-width: 930px) {
