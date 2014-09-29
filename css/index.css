@@ -444,6 +444,8 @@
 	margin: 0;
 	padding: 0 5px;
 	font-weight: normal;
+	text-align: center;
+	font-size: 1.1em;
 }
 @media (max-width: 700px){
 	.opinion > section {

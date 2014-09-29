@@ -1,30 +1,42 @@
 /**------------------------------
 ** MAIN MENU
 **------------------------------*/
+@media (min-width: 600px) {
+	.nav {
+		text-align: center;
+		/*text-align: left;*/
+		margin: 0 auto;
+		/*margin: 0;*/
+		padding-left: 0;
+	}
+}
 .nav-wrap{
 	display: block;
+	text-align: left;
 }
 .nav {
 	font-weight: normal;
 	text-decoration: none;
 	color: #61212b;
-	margin: 0;
+	margin: 0 0 0 3px;
 	list-style: none;
-	text-align: center;
-	padding-left: 15px;
+	padding-left:0;
 }
 .nav > li {
 	display: inline-block;
-	margin: 0 0 5px 0;
-	padding: 0 15px;
+	margin: 0 0 3px 0;
+	padding: 0 13px;
 	border-right: 1px solid #61212b;
+}
+.nav > li:first-child {
+	border-left: 1px solid #61212b;
 }
 .nav > li:last-child {
 	border: none;
 }
 .nav > li > a {
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 15px;
 	color: #61212b;
 }
 .mobile {
@@ -56,16 +68,13 @@
 		display: none;
 	}
 }
-@media (min-width: 930px) {
-	.nav {
-		text-align: center;
-		margin: 0 auto;
-		padding-left: 0;
-	}
-}
-/**------------------------------
-** SECUNDARY MENU
-**------------------------------*/
+
+
+
+/**------------------------------------------------------------------------------------------
+** SECUNDARY MENU ***************************************************************************
+**------------------------------------------------------------------------------------------*/
+
 .nav2 {
 	background-color: #333;
 	/*background-color: #E5E2C9;*/
@@ -76,22 +85,23 @@
 	list-style: none;
 	float: left;
 	color: #FFF;
+	/*color: #333;*/
 }
 .nav2 > li > a:link,
 .nav2 > li > a:visited {
 	display: block;
-	font-size: 90%;
-	padding: 10px 25px 10px 0;
+	font-size: 12px;
+	margin: 3px 20px 3px 0;
 	color: #FFF;
 	/*color: #333;*/
 	text-decoration: none;;
 	font-weight: 300;
-	/*font-weight: normal;*/
+	font-weight: normal;
 }
 .nav2-btn2 {
 	display: none;
-	/*font-weight: 300;*/
-	font-weight: normal;
+	font-weight: 300;
+	font-size: 16px;
 }
 @media (max-width: 930px) {
 	.nav2 {
@@ -100,17 +110,22 @@
 	}
 	.nav2 > li {
 		float: none;
-		border-bottom: 2px solid black;
-		border-bottom: 1px solid #333;
-		padding-left:15px;
+		border-bottom: 1px solid black;
+		/*border-bottom: 1px solid #333;*/
+		padding:6px 0 6px 15px;
+	}
+	.nav2 > li > a:link,
+	.nav2 > li > a:visited {
+		margin: 0;
 	}
 	.nav2 > li.last {
 		border-bottom: none;
 	}
 	.nav2-btn2 {
-		padding: 10px 0 10px 15px;
+		padding: 5px 0 5px 15px;
 		display: block;
 		text-align: left;
+		font-weight: normal;
 		background-color: #333;
 		/*background-color: #E5E2C9;*/
 		color: #FFF;
