@@ -64,17 +64,112 @@
 	.mobile {
 		display: block;
 	}
+	.mobile > ul > li, .mobile > ul > li:first-child{
+		border: none;
+	}
 	.desktop {
 		display: none;
 	}
 }
 
-
-
+/**------------------------------------------------------------------------------------------
+** PERIODICOS MENU DESKTOP ******************************************************************
+**------------------------------------------------------------------------------------------*/
+.menu-periodicos {
+	display: none;
+	position: absolute;
+	background-color: #E5E2C9;
+	color: #61212b;
+	padding: 6px;
+	margin: 0 auto;
+	color: #61212b;
+	font-size: 13px;
+	font-weight: normal;
+	border-radius: 1px;
+	top: 215px;
+}
+ul.pUl {
+	margin: 3px;
+}
+ul.pUl > li {
+	padding: 0 3px 2px 5px;
+}
+ul.pUl > li > a:link,
+ul.pUl > li > a:visited {
+	color: #61212b;
+}
+.pHeader {
+	cursor: default;
+	background-color: #61212b;
+	color: #E5E2C9;
+	font-weight: 300;
+	text-align: center;
+	margin: 15px 0 5px 0;
+	padding: 0 3px 0 5px;
+}
+.pHeader-first {
+	margin: 0 0 5px 0;
+}
+.periodicos:hover + div.menu-periodicos {
+	display: block;
+}
+div.menu-periodicos:hover {
+	display: block;
+}
+@media (max-width: 690px) {
+	.menu-periodicos {
+		top:195px;
+	}
+}
+@media (max-width: 600px) {
+	.periodicos:hover + div.menu-periodicos {
+		display: none;
+	}
+	div.menu-periodicos:hover {
+		display: block;
+	}
+}
+@media (max-width: 600px){
+	.menu-periodicos {
+		display: none;
+	}
+}
+/**------------------------------------------------------------------------------------------
+** PERIODICOS MENU MOBILE *******************************************************************
+**------------------------------------------------------------------------------------------*/
+.menu-periodicos-mobile {
+	display: none;
+}
+ul.pMobile {
+	padding: 0;
+	margin: 0;
+	font-size: .9em;
+}
+li.pHeader-mobile{
+	display: block;
+	cursor: pointer;
+	background-color: #61212b;
+	color: #E5E2C9;
+	font-weight: 300;
+	text-align: center;
+	margin: 0;
+	padding: 5px 0;
+	border-bottom: 2px solid #4d1a22;
+}
+li.pContent-mobile {
+	display: none;
+}
+li.pContent-mobile > ul > li {
+	text-align: center;
+	background-color: #E5E2C9;
+	padding: 3px 0;
+}
+li.pContent-mobile > ul > li > a {
+	color: #61212b;
+}
 /**------------------------------------------------------------------------------------------
 ** SECUNDARY MENU ***************************************************************************
 **------------------------------------------------------------------------------------------*/
-
 .nav2 {
 	background-color: #333;
 	/*background-color: #E5E2C9;*/
